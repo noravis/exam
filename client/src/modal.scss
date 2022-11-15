@@ -1,0 +1,144 @@
+/* klases:
+
+.modal-container 
+    .modal-header 
+    .modal-body
+         .modal-input-box 
+            .modal-line
+            .modal-side-line
+                
+    .buttons
+
+
+colors: #FEF5ED; #D3E4CD; #ADC2A9; #99A799
+*/
+
+* {
+    font-family: "Quicksand";
+}
+
+.modal-bg {
+    background: rgba($color: #000000, $alpha: 0.7);
+
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 140rem;
+    z-index: 1;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: fit-content;
+    border: 1px solid #99a799;
+    border-radius: 2px;
+    gap: 0.5rem;
+    background: #d3e4cd;
+}
+
+.modal-header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-header {
+    background: #fef5ed;
+    padding: 2rem;
+    color: black;
+    font-family: "Quicksand";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 1rem;
+}
+
+.modal-input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-family: "Quicksand";
+
+    .modal-line {
+        background-color: #fef5ed;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 0.5rem;
+        width: 13rem;
+    }
+    .modal-line:focus {
+        outline: #99a799;
+    }
+
+    .modal-side-line {
+        margin-top: 0.5rem;
+        width: 8rem;
+    }
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal-button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    background: #fef5ed;
+    color: #99a799;
+    margin: 1.5rem;
+    border: 1px solid #99a799;
+}
+
+.modal-button:hover {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    border: 1px solid #fef5ed;
+    background: #99a799;
+    color: #fef5ed;
+}
+
+.close {
+    background: #fef5ed;
+    border: none;
+    font-size: 2rem;
+}
+
+.photo {
+    max-width: 10rem;
+}
+
+.checkbox-box {
+    border: 1px solid black;
+    width: fit-content;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    padding: 1rem;
+    .photo {
+        margin-left: 0.5em;
+    }
+    .label {
+        margin-left: 0.5rem;
+    }
+    .checkbox {
+        margin-left: 1rem;
+    }
+}
