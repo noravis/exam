@@ -1,10 +1,10 @@
 import Back from "../src/Components/Back/Back";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Front from "./Components/Front/Front";
-import LoginPage from "./Components/LoginPage";
-import LogoutPage from "./Components/LogoutPage";
-import RequireAuth from "./Components/RequireAuth";
-import SignUp from "./Components/Front/SignUp";
+import Front from "../Components/Front";
+import LoginPage from "../Components/LoginPage";
+import LogoutPage from "../Components/LogoutPage";
+import RequireAuth from "../Components/RequireAuth";
+import SignUp from "../Components/Front/SignUp";
 
 function App() {
   return (
