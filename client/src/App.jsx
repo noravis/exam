@@ -1,10 +1,10 @@
-import Back from "../src/Components/Back/Back";
+import Back from "../src/Components/Back/Back.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Front from "../Components/Front";
-import LoginPage from "../Components/LoginPage";
-import LogoutPage from "../Components/LogoutPage";
-import RequireAuth from "../Components/RequireAuth";
-import SignUp from "../Components/Front/SignUp";
+import Front from "../src/Components/Front/Front";
+import LoginPage from "../src/Components/LoginPage";
+import LogoutPage from "../src/Components/LogoutPage";
+import RequireAuth from "../src/Components/RequireAuth";
+import SignUp from "../src/Components/Front/SignUp";
 
 function App() {
   return (
