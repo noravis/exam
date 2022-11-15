@@ -1,0 +1,98 @@
+/* klases:
+
+.create-container 
+    .create-header 
+    .create-body
+        .create-input-box 
+            .input-line
+            .side-line
+    .buttons
+
+
+colors: #FEF5ED; #D3E4CD; #ADC2A9; #99A799
+*/
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+    height: fit-content;
+    margin: 2rem;
+    border: 1px solid #99a799;
+    border-radius: 2px;
+    gap: 2rem;
+    background: #d3e4cd;
+}
+
+.create-header {
+    background: #fef5ed;
+    padding: 0.3rem;
+    color: black;
+    font-family: "Quicksand";
+    text-align: center;
+}
+
+.create-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 1rem;
+}
+
+.create-input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: "Quicksand";
+
+    .input-line {
+        background-color: #fef5ed;
+        border: 1px solid black;
+        border-radius: 2px;
+        padding: 0.5rem;
+        width: 13rem;
+        font-family: "Quicksand";
+    }
+    .input-line:focus {
+        outline: #99a799;
+    }
+
+    .side-line {
+        margin-top: 0.5rem;
+        width: 8rem;
+    }
+}
+
+.create-button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    background: #fef5ed;
+    color: #99a799;
+    margin: 1.5rem;
+    border: 1px solid #99a799;
+}
+
+.create-button:hover {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    border: 1px solid #fef5ed;
+    background: #99a799;
+    color: #fef5ed;
+}
+
+.buttonLogOut {
+    border: 2px solid #99a799;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    margin: 2rem;
+    background: #d3e4cd;
+    color: black;
+    font-family: "Quicksand";
+    text-decoration: none;
+}
